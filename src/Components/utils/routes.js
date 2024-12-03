@@ -3,5 +3,6 @@ export const routes={
     form:"form",
     detail:"detail",
     card:"card",
-    contact:"contact"
+    contact:"contact",
+    favs:"favs"
 }

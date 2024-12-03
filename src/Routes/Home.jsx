@@ -12,7 +12,7 @@ const Home = () => {
     <>
       <h1>Home</h1>
       <div className='list-container'>
-        {console.log(state)};
+        {console.log(state)}
         {state.doctors.map((doctor) => {
           return <Card key={doctor.id} doctor={doctor} />
         })

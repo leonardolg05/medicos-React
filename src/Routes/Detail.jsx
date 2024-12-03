@@ -23,13 +23,12 @@ const Detail = () => {
 
   return (
     <>
-      <h1>Detail Dentist id </h1>
+      <h1>Detail Dentist id {doctor.id} </h1>
       <h4>{doctor.name}</h4>
-        <h4>user:{doctor.username}</h4>
-        <h4>id : {doctor.id}</h4>
-        <h4>email : {doctor.email}</h4>
-        <h4>phone : {doctor.phone}</h4>
-        <h4>website : {doctor.website}</h4>
+        <div><label>user:</label> <input value={doctor.username}/></div>
+        <div><label>email</label> <input value={doctor.email}/></div>
+        <div><label>phone </label> <input value={doctor.phone}/></div>
+        <div><label>website : </label><input value={doctor.website}/></div>
     </>
   )
 }

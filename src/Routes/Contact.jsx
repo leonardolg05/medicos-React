@@ -4,9 +4,12 @@ import Form from '../Routes/Form'
 const Contact = () => {
   return (
     <div>
-      <h2>Want to know more?</h2>
-      <p>Send us your questions and we will contact you</p>
-      <Form/>
+      <Form>
+        <label>Nombre:</label>
+        <input type="text" />
+        <label>Email:</label>
+        <input type="text" />
+      </Form>
     </div>
   )
 }

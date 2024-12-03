@@ -1,6 +1,7 @@
 import React from "react";
 import {ContextProvider, useDoctorState} from "./Context/global.context";
 import { Link } from "react-router-dom";
+import '../styles/Card.module.css'
 
 const Card = ({doctor}) => {
   const {dispatch} = useDoctorState();
@@ -10,9 +11,9 @@ const Card = ({doctor}) => {
 
   return (
     <div >
-      <div className="">
+      <div className="cardContainer">
       <Link to={'/detail/' + doctor.id}>
-
+        <img src='../utils/images/doctor.jpg' alt="doctor" />
         <h4>name: {doctor.name}</h4>
         <h4>user:{doctor.username}</h4>
         <h4>id : {doctor.id}</h4>
